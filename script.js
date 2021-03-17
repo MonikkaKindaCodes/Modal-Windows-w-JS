@@ -30,11 +30,7 @@ overlay.addEventListener('click', hiddenModal);
 //Adding a Keypress Event - Creating a Global EventListener
 
 document.addEventListener('keydown', function (e) {
-
-    if (e.key === 'Escape') {
-        if (!modal.classList.contains('hidden')) {
-            hiddenModal();
-        }
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        hiddenModal();
     }
 });
-
